@@ -9,11 +9,6 @@
  
 
 
-  <li class="portfolio1 port1">
-    <a href="http://www.laurentrompp.com" target="blank">
-      <span class="text-content port1"><span>Lauren Trompp</span></span>
-    </a>
-  </li>
 
 
    <li class="portfolio2 port2">
@@ -71,6 +66,11 @@
   </li>
 
 
+  <li class="portfolio1 port1">
+    <a href="http://www.laurentrompp.com" target="blank">
+      <span class="text-content port1"><span>Lauren Trompp</span></span>
+    </a>
+  </li>
 
 
   <li class="portfolio10 port10">
