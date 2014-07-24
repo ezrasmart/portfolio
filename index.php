@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-
     <div id="container">
 		<div id="content">
 
