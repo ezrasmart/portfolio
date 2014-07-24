@@ -1,0 +1,17 @@
+# Exclude Files From All Robots:
+
+User-agent: *
+Disallow: /
+Disallow: /cgi-bin/
+
+
+
+
+# End robots.txt file
+
+
+
+font-family: "refrigerator-deluxe",sans-serif;
+
+
+font-family: "freight-sans-pro",sans-serif;

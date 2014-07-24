@@ -1,0 +1,625 @@
+/*
+Script URI: http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery/
+*/  
+
+html, body {border: 0; margin: 0; padding: 0;}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+  background-color: #F6F6F6;
+  background: #FEF5FA;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#FEF5FA), to(#999DA6));
+  background: -webkit-radial-gradient(#FEF5FA, #999DA6);
+  background: -moz-radial-gradient(rgb(254, 245, 250), rgb(153, 157, 166));
+  background: -o-radial-gradient(rgb(254, 245, 250), rgb(153, 157, 166));
+
+}
+a {text-decoration: none;
+  color: #ff5f00}
+  li {list-style: none}
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+/*===============================================================================
+
+TYPE
+
+===============================================================================*/
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 900;
+}
+p {
+  margin: 17px 0 0 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 41px;
+  text-align: center
+}
+h2 {
+  font-size: 41px;
+  line-height: 43px;
+}
+h3 {
+  font-size: 33px;
+  line-height: 33px;
+  padding: 0px;
+  margin: 0;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+}
+ul#menu {
+  float: left;
+  margin: 4px 0 0 19px;
+}
+ul#menu li {
+  float: left;
+  margin-right: 33px;
+}
+ul#menu li a {
+  color: #fff;
+  text-decoration: none
+}
+ul#menu li a:hover {
+  color: orange;
+  text-decoration: none
+}
+.logo {
+  background: url(images/ezra-sarajinsky-logo.png) no-repeat;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  height: 130px;
+  width: 130px;
+  top: 38px;
+  left: 16px;
+  z-index: 50;
+  background-size: cover;
+  position: fixed;
+  z-index: 200
+}
+/*#content ul li {
+
+padding-bottom: 12px;
+}*/
+.contactPath h2 {
+  display: inline;
+  margin-right: 60px
+}
+.contactPath a {
+  font-size: 30px;
+  margin-right: 20px
+}
+.contactPath a:hover {
+  color:#000;
+}
+/*===============================================================================
+
+COLUMNS
+
+===============================================================================*/
+
+.columns {
+  -webkit-column-count: 3;
+  -webkit-column-gap:   20px;  
+  -moz-column-count:    3;
+  -moz-column-gap:      20px;
+  column-count:         3;
+  column-gap:           20px;
+}
+
+/***** Main Layout ****/
+#container {
+  width: 100%;
+  height: 100%;
+  text-align: center;/* IE fix to center the page */
+}
+
+#content {
+  margin: 0 auto;/* center the page in Firefox */
+  text-align: left;
+}
+.narrow {
+  width: 960px;
+}
+/*===============================================================================
+
+WORK
+
+===============================================================================*/
+ul.img-list {
+
+}
+
+ul.img-list li {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 33.33%;
+  height: 300px;
+}
+
+
+span.text-content span {
+/* display: table-cell;
+text-align: center;
+vertical-align: middle;*/
+background-color: rgba(0, 0, 0, 0.3);
+display: block;
+text-align: center;
+height: 177px;
+padding-top: 123px;
+}
+
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+span.text-content {
+  /*background: rgba(0,0,0,0.5);*/
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: table;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+
+
+
+
+.portfolio1 {
+  background: url(images/lauren-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio2 {
+  background: url(images/insuranceline-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio3 {
+  background: url(images/eftpos-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio4 {
+  background: url(images/seabourne-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio5 {
+  background: url(images/asthmatix-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio6 {
+  background: url(images/goodman-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio7 {
+  background: url(images/jcdecaux-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio8 {
+  background: url(images/pocketlegal-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio9 {
+  background: url(images/jackfeldstein-hp.jpg) no-repeat center center;
+  background-size: cover;
+}
+.portfolio10 {
+  background: url(images/circa-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio11 {
+  background: url(images/apca-hp.jpg) no-repeat center top;
+  background-size: cover;
+}
+.portfolio12 {
+  background: url(images/panasonic-hp.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+.portrait {
+  background: url(images/ezra-sarajinsky.png) no-repeat;
+  float: right;
+  width:296px;
+  height: 314px;
+}
+
+
+
+
+/*===============================================================================
+
+PROJECTS
+
+===============================================================================*/
+
+.col1,.col2,.col3  {
+  width: 30%;
+  float: left;
+  margin-right: 25px
+}
+.col3  {
+  margin-right: 0px;
+}
+
+
+.col2 ul {
+  padding: 0;
+  margin: 9px 0 0 0;
+}
+.col2 ul li {
+  border-bottom: 1px solid #ccc ;
+  padding: 8px 0 8px 5px;
+}
+.col2 ul li:last-child{
+  border-bottom: none
+}
+.peiceFeature {
+  height: 500px;
+  width: 100%;
+}
+.goodman {
+  background: url(../images/goodman.jpg) no-repeat center top;
+  background-size: cover;
+}
+#projectLinkContainer {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  margin: 36px 0;
+}
+.link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 120px;
+  height: 40px;
+  margin: 10px 0 0 -60px;
+  border: 1px solid #666;
+}
+.link a {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 120px;
+  height: 40px;
+  font: normal 500 12px/40px serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000;
+  text-align: center;
+}
+.link .line-top {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 1px;
+  background: #ff5f00;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link .line-right {
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  width: 1px;
+  height: 0;
+  background: #ff5f00;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link .line-bottom {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 0;
+  height: 1px;
+  background: #ff5f00;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link .line-left {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 1px;
+  height: 0;
+  background: #ff5f00;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link:hover .line-top {
+  width: 122px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link:hover .line-right {
+  height: 40px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link:hover .line-bottom {
+  width: 122px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.link:hover .line-left {
+  height: 40px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+ul#projectFeature li img {
+  width: 100%;
+}
+ul#projectFeature li {
+  margin-bottom: 40px;
+}
+/*ul#projectFeature li:nth-child(2) {
+width: 40%;
+float: left;
+}
+ul#projectFeature li:nth-child(3) {
+width: 40%;
+float: left;
+}*/
+/*===============================================================================
+
+MENU
+
+===============================================================================*/
+.menuRight {
+  float: right;
+  width:48%;
+}
+.menuLeft {
+  float: left;
+  width:48%;
+}
+#sliderMenu {
+  width: 70%;
+  margin: 0 auto;
+}
+#sliderMenu ul {
+  text-align: center;
+  font-size: 40px
+}
+#sliderMenu ul li {
+
+}
+#sliderMenu ul li a {
+  display: block
+}
+#sliderMenu ul li a:hover {
+  background-color:rgba(255, 252, 0, 0.7);
+  color: #000
+}
+
+
+
+/*
+Name: Sliding Login Panel with jQuery 1.3.2
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: March 26, 2009
+Version: 1.0
+
+Copyright 2009 Jeremie Tisseau
+"Sliding Login Panel with jQuery 1.3.2" is distributed under the GNU General Public License version 3:
+http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/***** clearfix *****/
+.clear {clear: both;height: 0;line-height: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* Panel Tab/button */
+.tab {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.tab ul.login {
+  display: block;
+  clear: right;
+  height: 42px;
+  width: 180px;
+  padding: 0;
+  margin: 0 0 0 0px;
+
+}
+
+.tab ul.login li.left {
+  height: 42px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.tab ul.login li.right {
+
+  height: 42px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.tab ul.login li {
+  display: block;
+  float: left;
+  height: 42px;
+}
+
+.tab ul.login li a {
+  color: #fff;
+}
+
+.tab a.open, .tab a.close {
+  height: 150px;
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  position: relative;
+  top: 11px;
+}
+
+.tab a.open {/*background: url(../images/bt_open.png) no-repeat left 0;*/}
+.tab a.close {
+  background: url(images/bt_close.png) no-repeat left 0;
+  height: 20px;
+}
+
+/* sliding panel */
+#toppanel {
+  position: relative;   /*Panel will overlap  content */
+  /*position: relative;*/   /*Panel will "push" the content down */
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#panel {
+  width: 100%;
+  /*height: 182px;*/
+  color: #000;
+  background-color:#fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  display: none;
+  border-bottom: 1px solid #000
+}
+
+#panel h1 {
+  font-size: 1.6em;
+  padding: 5px 0 10px;
+  margin: 0;
+  color: #15ADFF;
+  font-weight: normal;
+  text-align: left;
+}
+
+#panel h2{
+  font-size: 1.2em;
+  padding: 10px 0 5px;
+  margin: 0;
+  color: white;
+}
+
+#panel p {
+  padding-bottom: 20px;
+}
+
+#panel a {
+  text-decoration: none;
+  color: #15ADFF;
+}
+
+#panel a:hover {
+  color: orange;
+}
+
+
+
+#panel .content {
+  /*  width: 960px;*/
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 0.85em;
+}
+
+#panel .content .left {
+  width: 280px;
+  float: left;
+  padding: 0 15px;
+  border-left: 1px solid #333;
+}
+
+#panel .content .right {
+  border-right: 1px solid #333;
+}
+
+.contactPath {
+  margin-top: 23px;
+}
+
+
+
+
+@media only screen and (max-width: 480px)  { 
+  ul.img-list li {
+    height: 150px;
+  }
+  .portrait {
+    width: 100%;
+    height: 350px;
+    display: block;
+    background-size: cover;
+  }
+}
