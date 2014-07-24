@@ -22,7 +22,11 @@
     </a>
   </li>
 
-
+<li class="portfolio12 port12">
+    <a href="http://panasonicair.com.au" target="blank">
+      <span class="text-content port12"><span>Panasonic</span></span>
+    </a>
+  </li>
 
 
    <li class="portfolio3 port3">
@@ -83,11 +87,7 @@
       <span class="text-content port11"><span>APCA</span></span>
     </a>
   </li>
-  <li class="portfolio12 port12">
-    <a href="http://panasonicair.com.au" target="blank">
-      <span class="text-content port12"><span>Panasonic</span></span>
-    </a>
-  </li>
+  
 </ul>
 
 		</div>
