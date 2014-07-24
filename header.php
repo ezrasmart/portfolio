@@ -48,7 +48,7 @@
 		<div class="tab">
 			<ul class="login">
 				<li id="toggle">
-					<a id="open" class="open" href="#">About This Guy</a>
+					<a id="open" class="open" href="#">About Ezra</a>
 					<a id="close" style="display: none;" class="close" href="#"></a>			
 				</li>
 			</ul> 
