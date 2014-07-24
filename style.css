@@ -116,6 +116,7 @@ COLUMNS
   width: 100%;
   height: 100%;
   text-align: center;/* IE fix to center the page */
+  margin-top: 39px
 }
 
 #content {
@@ -466,13 +467,14 @@ http://www.gnu.org/licenses/gpl-3.0.html
   position: fixed;
   top: 0;
   z-index: 999;
+  width:100%;
 }
 
 .tab ul.login {
   display: block;
   clear: right;
   height: 42px;
-  width: 180px;
+  width: 100%;
   padding: 0;
   margin: 0 0 0 0px;
 
@@ -501,6 +503,7 @@ http://www.gnu.org/licenses/gpl-3.0.html
   display: block;
   float: left;
   height: 42px;
+  width: 100%
 }
 
 .tab ul.login li a {
@@ -508,15 +511,19 @@ http://www.gnu.org/licenses/gpl-3.0.html
 }
 
 .tab a.open, .tab a.close {
-  height: 150px;
+  height: 29px;
   cursor: pointer;
   display: block;
   width: 150px;
   position: relative;
-  top: 11px;
+  top: 0px;
 }
 
-.tab a.open {/*background: url(../images/bt_open.png) no-repeat left 0;*/}
+.tab a.open {
+background: #333;
+width: 100%;
+padding-top: 8px;
+}
 .tab a.close {
   background: url(images/bt_close.png) no-repeat left 0;
   height: 20px;
