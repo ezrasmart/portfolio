@@ -18,11 +18,10 @@
 
 	<!-- Cascading Style Sheets -->
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" />
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet" />
 
 	<!-- Javascript -->
-	<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 	<script src="js/slide.js" type="text/javascript"></script>
 
 </head>

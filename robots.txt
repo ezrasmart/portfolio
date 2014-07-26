@@ -11,7 +11,3 @@ Disallow: /cgi-bin/
 
 
 
-font-family: "refrigerator-deluxe",sans-serif;
-
-
-font-family: "freight-sans-pro",sans-serif;
